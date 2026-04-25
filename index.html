@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tasks UI</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header class="header">
+        <h1>Task Manager</h1>
+      </header>
+
+      <section class="add-task">
+        <input type="text" id="taskInput" placeholder="Add a new task..." />
+        <button id="addBtn">Add</button>
+      </section>
+
+      <section class="tasks-info">
+        <div class="counter"><span id="tasksCount">0</span> Tasks</div>
+
+        <div class="filters" id="filterBtnsContainer">
+          <button class="filter-btn" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="done">Done</button>
+          <button class="filter-btn" data-filter="active">Active</button>
+        </div>
+      </section>
+
+      <section class="tasks" id="tasksContainer"></section>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
